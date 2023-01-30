@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css? family=Open+Sans:600");
+
+/* Reset Classes */
+
+:root{
+
+    --black: rgba(0, 0, 0, 1);
+    --blue-charcoal: rgba(0, 11, 19, 1); 
+    --cyan--aqua: rgba(0, 224, 255, 1); 
+    --steel-gray: rgba(26, 37, 54, 1); 
+    --ebony-clay-2: rgba(30, 42, 59, 1); 
+    --ebony-clay: rgba(38, 50, 68, 1); 
+    --tuna: rgba(39, 50, 68, 1); 
+    --tuna-2: rgba(40, 54, 71, 1); 
+    --san-juan: rgba(54, 74, 98, 1); 
+    --oxford-blue: rgba(56, 74, 96, 1); 
+    --waterloo-:rgba(122, 130, 142, 1); 
+    --iron-2: rgba(211, 215, 221, 1); 
+    --iron: rgba(212, 215, 221, 1); 
+    --purple-pizzazz: rgba(255, 0, 183, 1); 
+    --white: rgba(255, 255, 255, 1);
+
+    --font-size-xs: 12px;
+    --font-size-s: 14px; 
+    --font-size-m: 15px;
+    --font-size-1: 16px; 
+    --font-size-x1: 20px;
+    --font-size-xx1: 22px;
+    --font-size-xxx1: 30px;
+
+    --font-family-open_sans: "Open Sans";
+    
+}
