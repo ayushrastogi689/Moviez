@@ -31,3 +31,52 @@
     --font-family-open_sans: "Open Sans";
     
 }
+
+.screen a {
+    display: contents; 
+    text-decoration: none;
+
+}
+
+.container-center-horizontal {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    pointer-events: none; 
+    width: 100%; 
+}
+
+.container-center-horizontal > * {
+    flex-shrink: 0; 
+    pointer-events: auto;
+}
+
+.screen {
+    align-items: flex-start;
+    background-color: var(--white);
+    display: flex; 
+    height: 740px;
+    overflow: hidden; 
+    width: 1366px;
+    border: 1px none; 
+}
+
+.overlap-group10 {
+    align-items: flex-end; 
+    background-color: var(--ebony-clay); 
+    display: flex;
+    height: 742px; 
+    min-width: 1366px; 
+    gap: 48px;
+}
+
+.flex-col {
+    align-items: center;
+    background-color: var(--ebony-clay-2); 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 742px;
+    padding: 42px 0;
+    width: 725px;
+}
