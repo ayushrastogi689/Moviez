@@ -80,3 +80,26 @@
     padding: 42px 0;
     width: 725px;
 }
+
+.flex-col-1 { 
+    align-items: center; 
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 0.5px; 
+    min-height: 456px; 
+    width: 274px; 
+}
+
+.flex-col-2 { 
+    align-items: center; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 360px; 
+    width: 274px;
+}
+
+.mask-group-1 { 
+    height: 91px; 
+    margin-left: 7.5px; 
+    width: 91px;
+}
