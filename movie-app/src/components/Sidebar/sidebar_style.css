@@ -8,6 +8,24 @@
   color: white;
 }
 
+.login_avatar {
+  position: absolute;
+  width: 91px;
+  height: 91px;
+  left: 96px;
+  top: 42px;
+}
+
+.ellipse {
+  position: absolute;
+  width: 91px;
+  height: 91px;
+  left: 96px;
+  top: 42px;
+
+  background: #d4d7dd;
+}
+
 .vector1 {
   position: absolute;
   width: 274.5px;
