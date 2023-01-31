@@ -1,0 +1,39 @@
+.sidebar {
+  position: absolute;
+  width: 275px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #1f2a3c;
+  color: white;
+}
+
+.vector1 {
+  position: absolute;
+  width: 274.5px;
+  height: 0px;
+  left: 0.5px;
+  top: 191px;
+
+  border: 1px solid #394b61;
+}
+
+.vector2 {
+  position: absolute;
+  width: 274.5px;
+  height: 0px;
+  left: 0.5px;
+  top: 401px;
+
+  border: 1px solid #394b61;
+}
+
+.vector3 {
+  position: absolute;
+  width: 274.5px;
+  height: 0px;
+  left: 0.5px;
+  top: 497px;
+
+  border: 1px solid #394b61;
+}
