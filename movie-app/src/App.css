@@ -1,105 +1,108 @@
 @import url("https://fonts.googleapis.com/css? family=Open+Sans:600");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Reset Classes */
 
-:root{
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --blue-charcoal: rgba(0, 11, 19, 1);
+  --cyan--aqua: rgba(0, 224, 255, 1);
+  --steel-gray: rgba(26, 37, 54, 1);
+  --ebony-clay-2: rgba(30, 42, 59, 1);
+  --ebony-clay: rgba(38, 50, 68, 1);
+  --tuna: rgba(39, 50, 68, 1);
+  --tuna-2: rgba(40, 54, 71, 1);
+  --san-juan: rgba(54, 74, 98, 1);
+  --oxford-blue: rgba(56, 74, 96, 1);
+  --waterloo-: rgba(122, 130, 142, 1);
+  --iron-2: rgba(211, 215, 221, 1);
+  --iron: rgba(212, 215, 221, 1);
+  --purple-pizzazz: rgba(255, 0, 183, 1);
+  --white: rgba(255, 255, 255, 1);
 
-    --black: rgba(0, 0, 0, 1);
-    --blue-charcoal: rgba(0, 11, 19, 1); 
-    --cyan--aqua: rgba(0, 224, 255, 1); 
-    --steel-gray: rgba(26, 37, 54, 1); 
-    --ebony-clay-2: rgba(30, 42, 59, 1); 
-    --ebony-clay: rgba(38, 50, 68, 1); 
-    --tuna: rgba(39, 50, 68, 1); 
-    --tuna-2: rgba(40, 54, 71, 1); 
-    --san-juan: rgba(54, 74, 98, 1); 
-    --oxford-blue: rgba(56, 74, 96, 1); 
-    --waterloo-:rgba(122, 130, 142, 1); 
-    --iron-2: rgba(211, 215, 221, 1); 
-    --iron: rgba(212, 215, 221, 1); 
-    --purple-pizzazz: rgba(255, 0, 183, 1); 
-    --white: rgba(255, 255, 255, 1);
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 15px;
+  --font-size-1: 16px;
+  --font-size-x1: 20px;
+  --font-size-xx1: 22px;
+  --font-size-xxx1: 30px;
 
-    --font-size-xs: 12px;
-    --font-size-s: 14px; 
-    --font-size-m: 15px;
-    --font-size-1: 16px; 
-    --font-size-x1: 20px;
-    --font-size-xx1: 22px;
-    --font-size-xxx1: 30px;
-
-    --font-family-open_sans: "Open Sans";
-    
+  --font-family-open_sans: "Open Sans";
 }
 
 .screen a {
-    display: contents; 
-    text-decoration: none;
-
+  display: contents;
+  text-decoration: none;
 }
 
 .container-center-horizontal {
-    display: flex; 
-    flex-direction: row;
-    justify-content: center; 
-    pointer-events: none; 
-    width: 100%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
 }
 
 .container-center-horizontal > * {
-    flex-shrink: 0; 
-    pointer-events: auto;
+  flex-shrink: 0;
+  pointer-events: auto;
 }
 
 .screen {
-    align-items: flex-start;
-    background-color: var(--white);
-    display: flex; 
-    height: 740px;
-    overflow: hidden; 
-    width: 1366px;
-    border: 1px none; 
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 740px;
+  overflow: hidden;
+  width: 1366px;
+  border: 1px none;
 }
 
 .overlap-group10 {
-    align-items: flex-end; 
-    background-color: var(--ebony-clay); 
-    display: flex;
-    height: 742px; 
-    min-width: 1366px; 
-    gap: 48px;
+  align-items: flex-end;
+  background-color: var(--ebony-clay);
+  display: flex;
+  height: 742px;
+  min-width: 1366px;
+  gap: 48px;
 }
 
 .flex-col {
-    align-items: center;
-    background-color: var(--ebony-clay-2); 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    min-height: 742px;
-    padding: 42px 0;
-    width: 725px;
+  align-items: center;
+  background-color: var(--ebony-clay-2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 742px;
+  padding: 42px 0;
+  width: 725px;
 }
 
-.flex-col-1 { 
-    align-items: center; 
-    display: flex; 
-    flex-direction: column; 
-    margin-left: 0.5px; 
-    min-height: 456px; 
-    width: 274px; 
+.flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5px;
+  min-height: 456px;
+  width: 274px;
 }
 
-.flex-col-2 { 
-    align-items: center; 
-    display: flex; 
-    flex-direction: column; 
-    min-height: 360px; 
-    width: 274px;
+.flex-col-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  width: 274px;
 }
 
-.mask-group-1 { 
-    height: 91px; 
-    margin-left: 7.5px; 
-    width: 91px;
+.mask-group-1 {
+  height: 91px;
+  margin-left: 7.5px;
+  width: 91px;
 }
