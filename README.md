@@ -20,6 +20,9 @@ Kindly use the old version of React as Material UI is not compatible with Latest
 "@testing-library/user-event": "^13.5.0",
 
 
+3. Run "npm install" to install all the dependencies 
+  Install the additional packages/dependencies manually if any of it is not installed 
+
 
 
 ## Available Scripts
