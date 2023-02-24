@@ -1,13 +1,37 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { FaSearch } from "react-icons/fa";
 
+=======
+import styled from "styled-components";
+import { FaSearch } from "react-icons/fa";
+
+import movies from "../../data/moviesData.js";
+import MovieCard from "../MovieCard/MovieApp.js";
+
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
 export default function Navbar({ isScrolled }) {
   const [showSearch, setShowSearch] = useState(false);
   const [inputHover, setInputHover] = useState(false);
 
+<<<<<<< HEAD
+=======
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredMovies, setFilteredMovies] = useState(movies);
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+    setFilteredMovies(
+      movies.filter((movie) =>
+        movie.Title.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    );
+  };
+
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
   return (
     <Container>
       <nav className={`${isScrolled ? "scrolled" : ""} flex`}>
@@ -26,6 +50,10 @@ export default function Navbar({ isScrolled }) {
             >
               <FaSearch />
             </button>
+<<<<<<< HEAD
+=======
+            <div>
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
             <input
               type="text"
               placeholder={"Title, Movies, Keyword"}
@@ -36,6 +64,11 @@ export default function Navbar({ isScrolled }) {
                 setInputHover(false);
               }}
             />
+<<<<<<< HEAD
+=======
+
+    </div>
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
           </div>
         </div>
       </nav>
@@ -50,7 +83,11 @@ const Container = styled.div`
   nav {
     position: sticky;
     top: 0;
+<<<<<<< HEAD
     height: 6.5rem;
+=======
+    height: 80px;
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
     width: 100%;
     justify-content: center;
     position: fixed;
@@ -82,7 +119,11 @@ const Container = styled.div`
         width: 567px;
         height: 55px;
         left: 323px;
+<<<<<<< HEAD
         top: 42px;
+=======
+        top: 10px;
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
         border-radius: 8px;
 
         display: flex;

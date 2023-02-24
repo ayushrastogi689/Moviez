@@ -1,10 +1,16 @@
 .home_page {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 230%;
   left: 0px;
   top: 0px;
   background: #273244;
   color: white;
   text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+  margin-top: 136px;
 }

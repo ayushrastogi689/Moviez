@@ -1,10 +1,34 @@
 # Moviez
+<<<<<<< HEAD
+
+A React.js Movie application
+=======
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
 
 A React.js Movie application
 
-# Getting Started with Create React App
+## Note : Kindly use the old version of React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kindly use the old version of React as Material UI is not compatible with Latest version of React 18.0.2
+
+1. Old Version of React
+
+"react": "^17.0.2",
+"react-dom": "^17.0.2",
+"react-scripts": "5.0.1",
+"web-vitals": "^2.1.4"
+
+2. Remove these testing library code 
+
+"@testing-library/jest-dom": "^5.16.2",
+"@testing-library/react": "^12.1.3",
+"@testing-library/user-event": "^13.5.0",
+
+
+3. Run "npm install" to install all the dependencies.
+     Install the additional packages/dependencies manually if any of it is not installed 
+
+
 
 ## Available Scripts
 
@@ -37,6 +61,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+<<<<<<< HEAD
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
@@ -114,3 +139,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
    "react-dom": "^18.2.0",
    "react-scripts": "5.0.1",
    "web-vitals": "^2.1.4"
+=======
+>>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
