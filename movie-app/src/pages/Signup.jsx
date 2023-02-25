@@ -15,7 +15,7 @@ function Signup() {
     email: "",
     password: "",
   });
-
+  const navigate = useNavigate();
 
   const handleSignIn = async () => {
     try {
