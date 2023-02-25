@@ -20,7 +20,6 @@ code {
 html,
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
