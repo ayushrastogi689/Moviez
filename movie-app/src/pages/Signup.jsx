@@ -1,12 +1,21 @@
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import BackgroundImage from "../components/BackgroundImage";
 import Header from "../components/Header";
 
+
 function Signup() {
+  const [showPassword, setShowPassword] = useState(false);
+  const [formValues, setFormValues] = useState({
+    email: "",
+    password: "",
+  });
+
+
   return (
-    <Container>
+    <Container showPassword={showPassword}>
       <BackgroundImage />
       <div className="content">
         <Header login />
@@ -19,12 +28,27 @@ function Signup() {
             </h6>
           </div>
           <div className="form">
-            <input type="email" placeholder="Email address" name="email" />
-            <input type="password" placeholder="Password" name="password" />
-
-            <button>Get Started</button>
+            <input
+              type="email"
+              placeholder="Email address"
+             
+              name="email"
+              
+            />
+            
+              <input
+                type="password"
+                placeholder="Password"
+                
+                name="password"
+                
+              />
+            
+            
+              <button >Get Started</button>
+            
           </div>
-          <button>Sign-up</button>
+          {showPassword && <button onClick={handleSignIn}>Sign-up</button>}
         </div>
       </div>
     </Container>
