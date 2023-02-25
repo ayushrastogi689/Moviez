@@ -15,16 +15,19 @@ export default function Header(props) {
 }
 const StyledHeader = styled.header`
   padding: 0 4rem;
-  
-  }
+
   button {
     padding: 0.5rem 1rem;
-    background-color: #e50914;
+    background-color: #273244;
     border: none;
     cursor: pointer;
     color: white;
     border-radius: 0.2rem;
     font-weight: bolder;
     font-size: 1.05rem;
+  }
+
+  button:hover {
+    background-color: #e50914;
   }
 `;
