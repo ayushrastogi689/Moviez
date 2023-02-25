@@ -13,6 +13,9 @@ export default function BackgroundImage() {
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
   img {
     height: 100vh;
     width: 100vw;
