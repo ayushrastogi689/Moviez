@@ -91,6 +91,9 @@ const Container = styled.div`
             font-weight: bolder;
             font-size: 1.05rem;
           }
+          button:hover {
+            background-color: #e50914;
+          }
         }
       }
     }
