@@ -6,7 +6,6 @@ import BackgroundImage from "../components/BackgroundImage";
 import Header from "../components/Header";
 import { firebaseAuth } from "../utils/firebase-config";
 
-
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -32,7 +31,7 @@ function Login() {
         <div className="form-container flex column a-center j-center">
           <div className="form flex column a-center j-center">
             <div className="title">
-              <h3>Login</h3>
+              <h3>Login to your account</h3>
             </div>
             <div className="container flex column">
               <input
@@ -47,7 +46,7 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
               />
-              <button onClick={handleLogin}>Login to your account</button>
+              <button onClick={handleLogin}>Login</button>
             </div>
           </div>
         </div>
@@ -62,9 +61,10 @@ const Container = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
     grid-template-rows: 15vh 85vh;
     .form-container {
       gap: 2rem;
