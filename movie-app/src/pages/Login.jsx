@@ -6,19 +6,17 @@ import BackgroundImage from "../components/BackgroundImage";
 import Header from "../components/Header";
 import { firebaseAuth } from "../utils/firebase-config";
 
+
 function Login() {
-  const [showPassword, setShowPassword] = useState(false);
-  const [formValues, setFormValues] = useState({
-    email: "",
-    password: "",
-  });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleLoginIn = async () => {
+  const handleLogin = async () => {
     try {
       await signInWithEmailAndPassword(firebaseAuth, email, password);
     } catch (error) {
-      console.log(error);
+      console.log(error.code);
     }
   };
 
@@ -30,38 +28,28 @@ function Login() {
     <Container>
       <BackgroundImage />
       <div className="content">
-        <Header login />
-        <div className="body flex column a-center j-center">
-          <div className="form">
-            <input
-              type="email"
-              placeholder="Email address"
-              onChange={(e) =>
-                setFormValues({
-                  ...formValues,
-                  [e.target.name]: e.target.value,
-                })
-              }
-              name="email"
-              value={formValues.email}
-            />
-
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={(e) =>
-                setFormValues({
-                  ...formValues,
-                  [e.target.name]: e.target.value,
-                })
-              }
-              name="password"
-              value={formValues.password}
-            />
-
-            <button onClick={() => setShowPassword(true)}>Get Started</button>
+        <Header />
+        <div className="form-container flex column a-center j-center">
+          <div className="form flex column a-center j-center">
+            <div className="title">
+              <h3>Login</h3>
+            </div>
+            <div className="container flex column">
+              <input
+                type="text"
+                placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
+              <button onClick={handleLogin}>Login to your account</button>
+            </div>
           </div>
-          {showPassword && <button onClick={handleSignIn}>Sign up</button>}
         </div>
       </div>
     </Container>
@@ -74,64 +62,36 @@ const Container = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
     width: 100vw;
-    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
     grid-template-rows: 15vh 85vh;
-    .body {
-      gap: 1rem;
-      .text {
-        gap: 1rem;
-        text-align: center;
-        font-size: 2rem;
-        color: white;
-        h1 {
-          padding: 0 25rem;
-        }
-      }
+    .form-container {
+      gap: 2rem;
+      height: 85vh;
       .form {
-        display: grid;
-        grid-template-columns: ${({ showPassword }) =>
-          showPassword ? "1fr 1fr" : "2fr 1fr"};
-        width: 60%;
-        input {
-          color: black;
-          border: none;
-          padding: 1.5rem;
-          font-size: 1.2rem;
-          border: 1px solid black;
-          border-radius: 5px;
-          &:focus {
-            outline: none;
+        padding: 2rem;
+        background-color: #000000b0;
+        width: 25vw;
+        gap: 2rem;
+        color: white;
+        .container {
+          gap: 2rem;
+          input {
+            padding: 0.5rem 1rem;
+            width: 15rem;
+          }
+          button {
+            padding: 0.5rem 1rem;
+            background-color: #273244;
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 0.2rem;
+            font-weight: bolder;
+            font-size: 1.05rem;
           }
         }
-        button {
-          padding: 0.5rem 1rem;
-          background-color: #273244;
-          border: none;
-          border-radius: 0.2rem;
-          cursor: pointer;
-          color: white;
-          font-weight: bolder;
-          font-size: 1.05rem;
-        }
-        button:hover {
-          background-color: #e50914;
-        }
-      }
-      button {
-        padding: 0.5rem 1rem;
-        background-color: #273244;
-        border: none;
-        cursor: pointer;
-        color: white;
-        border-radius: 0.2rem;
-        font-weight: bolder;
-        font-size: 1.05rem;
-      }
-      button:hover {
-        background-color: #e50914;
       }
     }
   }
