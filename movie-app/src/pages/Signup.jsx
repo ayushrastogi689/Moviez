@@ -94,6 +94,7 @@ const Container = styled.div`
     grid-template-rows: 15vh 85vh;
     .body {
       gap: 1rem;
+      height: 75vh;
       .text {
         gap: 1rem;
         text-align: center;

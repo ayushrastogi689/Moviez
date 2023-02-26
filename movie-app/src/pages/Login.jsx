@@ -68,7 +68,7 @@ const Container = styled.div`
     grid-template-rows: 15vh 85vh;
     .form-container {
       gap: 2rem;
-      height: 85vh;
+      height: 75vh;
       .form {
         padding: 2rem;
         background-color: #000000b0;
