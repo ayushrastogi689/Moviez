@@ -74,7 +74,7 @@ function Signup() {
               <button onClick={() => setShowPassword(true)}>Get Started</button>
             )}
           </div>
-          {showPassword && <button onClick={handleSignIn}>Sign-up</button>}
+          {showPassword && <button onClick={handleSignIn}>Sign up</button>}
         </div>
       </div>
     </Container>
