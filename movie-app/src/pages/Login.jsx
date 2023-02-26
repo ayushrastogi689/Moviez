@@ -14,9 +14,8 @@ function Login() {
   });
   const navigate = useNavigate();
 
-  const handleSignIn = async () => {
+  const handleLoginIn = async () => {
     try {
-      const { email, password } = formValues;
       await signInWithEmailAndPassword(firebaseAuth, email, password);
     } catch (error) {
       console.log(error);
