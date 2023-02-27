@@ -33,7 +33,7 @@ function Login() {
             <div className="title">
               <h3>Login to your account</h3>
             </div>
-            <div className="container flex column">
+            <div className="form-input flex column">
               <input
                 type="text"
                 placeholder="Email"
@@ -70,12 +70,12 @@ const Container = styled.div`
       gap: 2rem;
       height: 75vh;
       .form {
-        padding: 2rem;
+        padding: 1rem;
         background-color: #000000b0;
         width: 25vw;
         gap: 2rem;
         color: white;
-        .container {
+        .form-input {
           gap: 2rem;
           input {
             padding: 0.5rem 1rem;
