@@ -25,6 +25,7 @@ const StyledHeader = styled.header`
     border-radius: 0.2rem;
     font-weight: bolder;
     font-size: 1.05rem;
+    transition: 0.2s ease-out;
   }
 
   button:hover {

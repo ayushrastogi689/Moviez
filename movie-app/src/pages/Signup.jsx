@@ -129,6 +129,7 @@ const Container = styled.div`
           color: white;
           font-weight: bolder;
           font-size: 1.05rem;
+          transition: 0.2s ease-out;
         }
         button:hover {
           background-color: #e50914;
@@ -143,6 +144,7 @@ const Container = styled.div`
         border-radius: 0.2rem;
         font-weight: bolder;
         font-size: 1.05rem;
+        transition: 0.2s ease-out;
       }
       button:hover {
         background-color: #e50914;
