@@ -1,9 +1,4 @@
 # Moviez
-<<<<<<< HEAD
-
-A React.js Movie application
-=======
->>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
 
 A React.js Movie application
 
@@ -27,7 +22,6 @@ Kindly use the old version of React as Material UI is not compatible with Latest
 
 3. Run "npm install" to install all the dependencies.
      Install the additional packages/dependencies manually if any of it is not installed 
-
 
 
 ## Available Scripts
@@ -139,5 +133,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
    "react-dom": "^18.2.0",
    "react-scripts": "5.0.1",
    "web-vitals": "^2.1.4"
-=======
->>>>>>> 21f5f44a521b707d1daa2076761a292f96cae348
