@@ -20,7 +20,7 @@ function HomePage()
   return (
     <div className="home_page">
       <Sidebar2 />
-      <Navbar />
+      
       <div className="container" >
         <MovieApp />
       </div> 
