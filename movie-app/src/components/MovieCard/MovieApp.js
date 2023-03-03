@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
 import "./MovieApp_style.css";
 
 const movies = [
@@ -507,7 +507,6 @@ const movies = [
   },
 ];
 
-
 const MovieCard = ({ movie }) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -515,42 +514,58 @@ const MovieCard = ({ movie }) => {
     setExpanded(!expanded);
   };
   return (
-    <a href='#' className={`movie-card ${expanded ? 'expanded' : ''}`} onClick={toggleExpanded}>
+    <a
+      href="#"
+      className={`movie-card ${expanded ? "expanded" : ""}`}
+      onClick={toggleExpanded}
+    >
       <img src={movie.Poster} alt={movie.Title} />
       {expanded && (
         <div className="movie-details">
           <ul>
-          <li>IMDB Rating: {movie.imdbRating}</li>
-          <li>Release Year: {movie.Year}</li>
-          <li>Running Time: {movie.Runtime}</li>
-          <li>Directed by: {movie.Director}</li>
-          <li>Language: {movie.Language}</li>
-          <li>Plot: {movie.Plot}</li>
-          <button>Play Movie</button>
-          <button>Watch Trailer</button>
+            <li>IMDB Rating: {movie.imdbRating}</li>
+            <li>Release Year: {movie.Year}</li>
+            <li>Running Time: {movie.Runtime}</li>
+            <li>Directed by: {movie.Director}</li>
+            <li>Language: {movie.Language}</li>
+            <li>Plot: {movie.Plot}</li>
+            <button>Play Movie</button>
+            <button>Watch Trailer</button>
           </ul>
         </div>
       )}
       {!expanded && (
         <div>
-        <h2>{movie.Title}</h2>
-          <div className='flex-icon'>
-            <i className='icon icon-playbutton' />
-            <i className='icon icon-union' />
+          <h2>{movie.Title}</h2>
+          <div className="flex-icon">
+            <i className="icon icon-playbutton" />
+            <i className="icon icon-union" />
           </div>
-          </div>
-        )}
+        </div>
+      )}
     </a>
   );
 };
 
-const MovieApp = () =>
-{
+const MovieApp = () => {
+  const [query, setQuery] = useState("");
+
+  const handleSearch = (event) => {
+    setQuery(event.target.value);
+  };
+
+  const filteredMovies = movies.filter((movie) =>
+    movie.Title.toLowerCase().includes(query.toLowerCase())
+  );
+
   return (
-    <div className='movie-grid'>
-      {movies.map((movie, index) => (
-        <MovieCard key={index} movie={movie} />
-      ))}
+    <div>
+      <input type="text" placeholder="Search" onChange={handleSearch} />
+      <div className="movie-grid">
+        {filteredMovies.map((movie, index) => (
+          <MovieCard key={index} movie={movie} />
+        ))}
+      </div>
     </div>
   );
 };
