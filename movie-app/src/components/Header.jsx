@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <StyledHeader className="flex a-center j-between">
       <div className="logo"></div>
-      <button onClick={() => navigate(props.login ? "/login" : "/signup")}>
+      <button onClick={() => navigate(props.login ? "/login" : "/")}>
         {props.login ? "Log In" : "Sign Up"}
       </button>
     </StyledHeader>
