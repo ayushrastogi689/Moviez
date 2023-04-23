@@ -1,6 +1,7 @@
 # Moviez
 
 A React.js Movie application
+Live link: https://streammovies.vercel.app/
 
 ## Note : Kindly use the old version of React
 
